@@ -3,6 +3,7 @@ using namespace std;
 
 int main() {
   cout << "This Program Manages Inventory System with Items, Quantities, and Prices.";
+  cout << "endl";
   cout << "Items";
 
   cout << endl;
