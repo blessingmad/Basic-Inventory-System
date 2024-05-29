@@ -8,6 +8,10 @@ int main() {
   cout << endl;
 
   cout << "Test ";
+
+  cin >> "What is your name";
+
+  cout << "Blessing is learning cpp";
   
   return 0;
 }
