@@ -3,7 +3,7 @@
 This program demostrates how store inventory can be managed and distributed to customers. l used c++ programming language to demostrate the functionalities of the program.
 
 
-Here is a demostration video of how the program works:[Software Demo Video](http://youtube.link.goes.here)
+Here is a demostration video of how the program works:[Basis Inventory System](http://youtube.link.goes.here)
 
 # Development Environment
 
