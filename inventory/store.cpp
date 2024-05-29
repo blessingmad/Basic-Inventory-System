@@ -2,17 +2,27 @@
 using namespace std;
 
 int main() {
-  cout << "This Program Manages Inventory System with Items, Quantities, and Prices.";
-  cout << "endl";
-  cout << "Items";
+  //program heading
+  cout << ".....................................................................................\n";
+
+
+  cout << "This Program Manages Inventory System with Items, Quantities, and Prices.\n";
+
+
+  
+  cout << "***********************************************************************************\n";
 
   cout << endl;
 
-  cout << "Test ";
+  cout << "Basic Stores \n";
 
-  cin >> "What is your name";
+ cout << "Items \t";
+ cout << "Quantities\t";
+ cout << "Prices";
 
-  cout << "Blessing is learning cpp";
+
   
   return 0;
+
+
 }
