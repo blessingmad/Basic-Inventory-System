@@ -84,21 +84,22 @@ int main() {
         cout << "Enter your choice: ";
         int choice;
         cin >> choice;
-
+    // bottom 
         if (choice == 1) {
             store.displayProducts();
         } else if (choice == 2) {
             cout << "Enter product name: ";
-            string productName;
-            cin >> productName;
-            cout << "Enter quantity: ";
-            int quantity;
-            cin >> quantity;
-            store.purchaseProduct(productName, quantity);
+            string itemName;
+            cin >> itemName;
+            cout << "Enter Quantity: ";
+            int total;
+            cin >> total;
+            store.purchaseProduct(itemName, total);
         } else if (choice == 3) {
             break;
         } else {
-            cout << "Invalid choice. Please try again." << endl;
+            cout << "Invalid choice. please try again" << endl;
+            
         }
     }
 
