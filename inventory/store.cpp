@@ -92,7 +92,7 @@ int main(){
     store.addItem(Product("Smart TV",    210.80, 120));
     store.addItem(Product("Games",   40.10, 100));
     store.addItem(Product("Books",    12.20, 150));
-    store.addItem(Product("Accessories\n",   10.00, 120));
+    store.addItem(Product("Accessories",   10.00, 120));
 
     //Writes store name.
     cout << "\n ABC Corner Store\n";
