@@ -1,6 +1,6 @@
 # Overview
 
-This program demostrates how store inventory can be managed and distributed to customers. l used c++ programming language to demostrate the functionalities of the program.
+This program demostrates how a store inventory software can be managed and distributed to customers. l used c++ programming language to demostrate the functionalities of the program.
 
 
 Here is a demostration video of how the program works:[Basis Inventory System](http://youtube.link.goes.here)
@@ -22,6 +22,6 @@ l used c++ programming language to develop the program.
 - [MinGW](https://sourceforge.net/projects/mingw/)
 
 # Future Work
-- Improve calculations.
+- Display date .
 - Keep a record for each user activities.
-- Use boolean statements
+- Display totat items bought and the total price plus change, if any.

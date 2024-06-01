@@ -1,4 +1,5 @@
- //includes the input-output stream library
+
+//includes the input-output stream library
 #include <iostream>
 // include the vector library
 #include <vector> 
@@ -9,6 +10,8 @@
 
 // use the standard namespace
 using namespace std; 
+
+
  
 
 //Defines a class to represent a item in the store
@@ -33,9 +36,11 @@ public:
     }
 
 private:
+    //naming the item
     string name;
+    // pricing the item
     double price;
-    int stock;
+    int stock; // Number of items in store
 };
 // Define a class to represent a store
 class Store {
@@ -44,19 +49,19 @@ public:
         items.push_back(product);
     }
     //Function to display all products in the stores
-    void displayItems() const {
-        cout << left << setw(20 ) << "Item" << setw(15) << "Price" << "Stock" << endl;
+   void displayItems() const {
+        // Spacing the product, price and stock columns
+        cout << left << setw(30 ) << "Product" << setw(20) <<  "Price:$" << "Stock\n" << endl;
         cout << "********************************************************" << endl;
 
-        for ( const auto & product : items ) {
-            cout << left << (20) << product.getName()
-                 << setw (15) << product.getPrice()
+        for ( const auto& product : items ) {
+            cout << left << setw(30) << product.getName()
+                 << setw (20) << product.getPrice()
                  << product.getStock() << endl;
 
         }
     }
-   
-    //here now 
+    //function to manage purchasing of items from the store
     void purchaseItem (const string& itemName, int quantity){
         for (auto& product : items) {
             if (product.getName() == itemName) { 
@@ -77,38 +82,38 @@ public:
     };
 
 private:
-    vector <Product> items;
+    vector <Product> items; // vector to store the shop items
 }; 
 
 int main(){
     Store store;
-    store.addItem(Product("Camera", 201.1, 30));
-    store.addItem(Product("Battries", 13.25, 13));
-    store.addItem(Product("Smart TV", 100, 87));
-    store.addItem(Product("DVD Player", 50.50, 32));
-    store.addItem(Product("Shaving Machine", 20.00, 37));
-    store.addItem(Product("Back Pack", 12.10, 50));
+    store.addItem(Product("\n Camera",   199.90, 100));
+    store.addItem(Product("Battries",    102.30, 150));
+    store.addItem(Product("Smart TV",    210.80, 120));
+    store.addItem(Product("Games",   40.10, 100));
+    store.addItem(Product("Books",    12.20, 150));
+    store.addItem(Product("Accessories\n",   10.00, 120));
 
     //Writes store name.
-    cout << "ABC Corner Store\n";
+    cout << "\n ABC Corner Store\n";
 
  
     while (true){
-        cout << "\n Display Menu:" << endl;
+        cout << "\n Display Menu:\n" << endl;
         cout << "1. Show Product:" << endl;
         cout << "2. Buy Product:" << endl;
-        cout << "3. Exit" << endl;
-        cout << "Enter Your Choice:";
+        cout << "3. Exit\n" << endl;
+        cout << "\n Enter Your Choice:\n";
         
         int choice;
         
         cin >> choice;
         ;
-    // bottom 
+    //Manage the user's menu choice 
         if (choice == 1) {
             store.displayItems();
         } else if (choice == 2) {
-            cout << "Enter product name: ";
+            cout << "\n Enter product name: ";
             string itemName;
             cin >> itemName;
             cout << "Enter Quantity: ";
@@ -125,3 +130,6 @@ int main(){
 
     return 0;
 }
+
+
+
